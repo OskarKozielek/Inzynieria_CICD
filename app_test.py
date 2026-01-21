@@ -1,9 +1,7 @@
-import add, sub from app
+from app import add, sub
 
 def test_add():
-  add(4,2)
-  add(10, 7)
+  assert add(4,2) == 6
 
 def test_sub():
-  sub(10, 5)
-  sub(6, 2)
+  assert sub(4, 3) == 1
